@@ -3,7 +3,7 @@
 /* Root Variables */
 :root {
     --primary-color: #2c3e50;
-    --secondary-color: #3498db;
+    --secondary-color: #1e6ba8; /* Darker blue for better contrast */
     --accent-color: #e74c3c;
     --text-color: #333;
     --bg-color: #f4f4f4;
@@ -35,7 +35,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: var(--shadow);
 }
 
 .logo {
@@ -79,7 +78,6 @@ header {
 /* Navigation Styles - Mobile */
 nav {
     background-color: var(--secondary-color);
-    box-shadow: var(--shadow);
 }
 
 .nav-list {
@@ -141,7 +139,6 @@ section {
     padding: 1.5rem;
     margin-bottom: 2rem;
     border-radius: 8px;
-    box-shadow: var(--shadow);
 }
 
 .about-me p {
@@ -158,7 +155,6 @@ section {
     height: auto;
     border-radius: 8px;
     box-shadow: var(--shadow);
-    margin-top: 1rem;
 }
 
 /* Filter Buttons */
