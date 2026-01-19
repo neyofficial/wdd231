@@ -1,0 +1,67 @@
+{
+  "members": [
+  {
+    "name": "Tech Solutions Ghana",
+    "address": "123 Independence Avenue, Accra",
+    "phone": "(233) 302-123-456",
+    "website": "https://techsolutions.com.gh",
+    "image": "tech-solutions.png",
+    "membershipLevel": 3,
+    "description": "Leading IT services provider in West Africa"
+  },
+  {
+    "name": "Golden Bean Coffee",
+    "address": "45 Oxford Street, Osu, Accra",
+    "phone": "(233) 244-567-890",
+    "website": "https://goldenbean.gh",
+    "image": "golden-bean.png",
+    "membershipLevel": 1,
+    "description": "Premium local coffee roaster"
+  },
+  {
+    "name": "Coastal Shipping Ltd",
+    "address": "Tema Harbor Road, Tema",
+    "phone": "(233) 303-234-567",
+    "website": "https://coastalshipping.com",
+    "image": "coastal-shipping.jpeg",
+    "membershipLevel": 2,
+    "description": "International freight and logistics"
+  },
+  {
+    "name": "Afrik Fashion House",
+    "address": "78 Spintex Road, Accra",
+    "phone": "(233) 201-345-678",
+    "website": "https://afrikfashion.gh",
+    "image": "afrik-fashion.jpeg",
+    "membershipLevel": 1,
+    "description": "Contemporary African fashion design"
+  },
+  {
+    "name": "BuildRight Construction",
+    "address": "12 Airport Residential, Accra",
+    "phone": "(233) 302-456-789",
+    "website": "https://buildright.com.gh",
+    "image": "build-right.png",
+    "membershipLevel": 3,
+    "description": "Commercial and residential construction"
+  },
+  {
+    "name": "Fresh Harvest Agro",
+    "address": "Dodowa Road, Greater Accra",
+    "phone": "(233) 244-890-123",
+    "website": "https://freshharvest.gh",
+    "image": "fresh-harvest.jpeg",
+    "membershipLevel": 2,
+    "description": "Organic farming and produce distribution"
+  },
+  {
+    "name": "Digital Marketing Pro",
+    "address": "89 Ring Road, East Legon, Accra",
+    "phone": "(233) 202-567-890",
+    "website": "https://digitalmarketingpro.gh",
+    "image": "digital-marketing.jpeg",
+    "membershipLevel": 1,
+    "description": "Social media and digital advertising agency"
+  }
+]
+}

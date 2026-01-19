@@ -1,0 +1,257 @@
+/* CSS Variables */
+:root {
+  --primary-color: #2C5F8D;
+  --secondary-color: #E8A547;
+  --background-color: #FFFFFF;
+  --text-color: #333333;
+  --light-gray: #F5F5F5;
+  --border-color: #DDDDDD;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-gray);
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primary-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header Styles */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color: white;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Mobile Navigation Toggle Button */
+#menu-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* Navigation Menu - Mobile */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--primary-color);
+  flex-direction: column;
+}
+
+nav ul.show {
+  display: flex;
+}
+
+nav ul li {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: var(--secondary-color);
+}
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 60vh;
+}
+
+/* Directory Header */
+.directory-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.directory-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* View Toggle Buttons */
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-btn {
+  background-color: white;
+  border: 2px solid var(--border-color);
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-btn:hover {
+  border-color: var(--primary-color);
+}
+
+.view-btn.active {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+/* Members Container - Grid View (Default Mobile) */
+#members-container.grid-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Member Cards - Grid View */
+.member-card {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.member-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.member-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+
+.member-card p {
+  margin: 0.5rem 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.member-card a {
+  color: var(--primary-color);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.member-card a:hover {
+  text-decoration: underline;
+}
+
+/* Membership Level Badge */
+.membership-level {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.level-1 {
+  background-color: #CD7F32;
+  color: white;
+}
+
+.level-2 {
+  background-color: #C0C0C0;
+  color: #333;
+}
+
+.level-3 {
+  background-color: #FFD700;
+  color: #333;
+}
+
+/* Members Container - List View */
+#members-container.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#members-container.list-view .member-card {
+  border-radius: 0;
+  border-left: none;
+}
