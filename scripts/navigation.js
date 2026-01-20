@@ -1,18 +1,16 @@
-// navigation.js - Handles responsive navigation menu
 
-// Get the menu toggle button and navigation list
 const menuToggle = document.getElementById('menu-toggle');
 const navList = document.querySelector('.nav-list');
 
-// Toggle the navigation menu when hamburger is clicked
+
 menuToggle.addEventListener('click', () => {
     navList.classList.toggle('show');
     
-    // Optional: Add animation to hamburger icon
+
     menuToggle.classList.toggle('active');
 });
 
-// Close menu when clicking outside of it
+
 document.addEventListener('click', (event) => {
     const isClickInsideNav = navList.contains(event.target);
     const isClickOnToggle = menuToggle.contains(event.target);
@@ -23,7 +21,7 @@ document.addEventListener('click', (event) => {
     }
 });
 
-// Close menu when window is resized to desktop view
+
 window.addEventListener('resize', () => {
     if (window.innerWidth >= 768) {
         navList.classList.remove('show');
@@ -31,18 +29,12 @@ window.addEventListener('resize', () => {
     }
 });
 
-// date.js - Handles dynamic date displays
-
-// Get current year and display it in the footer
 const currentYear = new Date().getFullYear();
 document.getElementById('current-year').textContent = currentYear;
 
-// Get last modified date and display it in the footer
 document.getElementById('lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
-// course.js - Handles course display and filtering
 
-// Course array - Modify the 'completed' property based on your progress
 const courses = [
     {
         subject: 'CSE',
@@ -123,40 +115,39 @@ const courses = [
     }
 ];
 
-// Function to display courses
 function displayCourses(filteredCourses) {
     const courseCardsContainer = document.getElementById('course-cards');
-    courseCardsContainer.innerHTML = ''; // Clear existing courses
+    courseCardsContainer.innerHTML = ''; 
 
     filteredCourses.forEach(course => {
         const courseCard = document.createElement('div');
         courseCard.classList.add('course-card');
         
-        // Add 'completed' class if the course is completed
+      
         if (course.completed) {
             courseCard.classList.add('completed');
         }
 
-        // Set course content
+       
         courseCard.textContent = `${course.subject} ${course.number}`;
         
-        // Optional: Add title as tooltip
+        
         courseCard.title = course.title;
 
         courseCardsContainer.appendChild(courseCard);
     });
 
-    // Update total credits
+   
     updateTotalCredits(filteredCourses);
 }
 
-// Function to calculate and display total credits
+
 function updateTotalCredits(filteredCourses) {
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     document.getElementById('credits-total').textContent = totalCredits;
 }
 
-// Function to filter courses
+
 function filterCourses(subject) {
     if (subject === 'all') {
         displayCourses(courses);
@@ -166,22 +157,22 @@ function filterCourses(subject) {
     }
 }
 
-// Add event listeners to filter buttons
+
 const filterButtons = document.querySelectorAll('.filter-btn');
 
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Remove 'active' class from all buttons
+        
         filterButtons.forEach(btn => btn.classList.remove('active'));
         
-        // Add 'active' class to clicked button
+        
         button.classList.add('active');
         
-        // Get the filter value and filter courses
+       
         const filter = button.getAttribute('data-filter');
         filterCourses(filter);
     });
 });
 
-// Display all courses on page load
+
 displayCourses(courses);
