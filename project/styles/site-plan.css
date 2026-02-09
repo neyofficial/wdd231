@@ -1,0 +1,82 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #1f3a5f;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+
+header p {
+  margin-top: 0.5rem;
+}
+
+/* Main Content */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+}
+
+h2 {
+  color: #1f3a5f;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  margin-top: 1rem;
+  color: #3fa796;
+}
+
+/* Lists */
+ul {
+  margin-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Wireframe Boxes */
+.wireframe {
+  border: 2px dashed #3fa796;
+  padding: 1rem;
+  margin-top: 0.75rem;
+}
+
+.wireframe p {
+  background-color: #f4f6f8;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1f3a5f;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
