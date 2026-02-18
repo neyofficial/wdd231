@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Budget Planning Basics",
+    "category": "Finance",
+    "level": "Beginner",
+    "duration": "2 Weeks",
+    "author": "ThrivePath Team"
+  },
+  {
+    "id": 2,
+    "title": "Smart Saving Strategies",
+    "category": "Finance",
+    "level": "Beginner",
+    "duration": "3 Weeks",
+    "author": "ThrivePath Team"
+  },
+  {
+    "id": 3,
+    "title": "Investment Fundamentals",
+    "category": "Finance",
+    "level": "Intermediate",
+    "duration": "4 Weeks",
+    "author": "ThrivePath Team"
+  },
+  {
+    "id": 4,
+    "title": "Understanding Credit Scores",
+    "category": "Finance",
+    "level": "Intermediate",
+    "duration": "2 Weeks",
+    "author": "ThrivePath Team"
+  },
+  {
+    "id": 5,
+    "title": "Debt Management Techniques",
+    "category": "Finance",
+    "level": "Advanced",
+    "duration": "3 Weeks",
+    "author": "ThrivePath Team"
+  },
+  {
+    "id": 6,
+    "title": "Resume Writing Masterclass",
+    "category": "Career",
+    "level": "Beginner",
+    "duration": "2 Weeks",
+    "author": "Career Mentor"
+  },
+  {
+    "id": 7,
+    "title": "Interview Confidence",
+    "category": "Career",
+    "level": "Beginner",
+    "duration": "2 Weeks",
+    "author": "Career Mentor"
+  },
+  {
+    "id": 8,
+    "title": "LinkedIn Optimization",
+    "category": "Career",
+    "level": "Intermediate",
+    "duration": "1 Week",
+    "author": "Career Mentor"
+  },
+  {
+    "id": 9,
+    "title": "Networking for Professionals",
+    "category": "Career",
+    "level": "Intermediate",
+    "duration": "3 Weeks",
+    "author": "Career Mentor"
+  },
+  {
+    "id": 10,
+    "title": "Leadership Skills Development",
+    "category": "Career",
+    "level": "Advanced",
+    "duration": "4 Weeks",
+    "author": "Leadership Coach"
+  },
+  {
+    "id": 11,
+    "title": "Time Management Systems",
+    "category": "Productivity",
+    "level": "Beginner",
+    "duration": "2 Weeks",
+    "author": "Productivity Coach"
+  },
+  {
+    "id": 12,
+    "title": "Goal Setting Frameworks",
+    "category": "Productivity",
+    "level": "Beginner",
+    "duration": "2 Weeks",
+    "author": "Productivity Coach"
+  },
+  {
+    "id": 13,
+    "title": "Advanced Productivity Tools",
+    "category": "Productivity",
+    "level": "Intermediate",
+    "duration": "3 Weeks",
+    "author": "Productivity Coach"
+  },
+  {
+    "id": 14,
+    "title": "Entrepreneurship Foundations",
+    "category": "Business",
+    "level": "Intermediate",
+    "duration": "4 Weeks",
+    "author": "Business Advisor"
+  },
+  {
+    "id": 15,
+    "title": "Personal Branding Strategy",
+    "category": "Career",
+    "level": "Advanced",
+    "duration": "3 Weeks",
+    "author": "Brand Strategist"
+  }
+]

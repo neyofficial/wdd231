@@ -2,13 +2,11 @@
 // ThrivePath - home.js
 // ----------------------------
 
-// Wait until DOM loads
 document.addEventListener("DOMContentLoaded", () => {
 
   // ----------------------------
   // Mobile Menu Toggle
   // ----------------------------
-
   const menuBtn = document.querySelector("#menuBtn");
   const navMenu = document.querySelector("#navMenu");
 
@@ -21,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // ----------------------------
   // Contact Form Validation
   // ----------------------------
-
   const form = document.querySelector("#contactForm");
 
   if (form) {
@@ -35,8 +32,34 @@ document.addEventListener("DOMContentLoaded", () => {
         event.preventDefault();
         alert("Please complete all required fields before submitting.");
       }
-
     });
+  }
+
+  // ----------------------------
+  // Dynamic Resource Cards (Array + Template Literals)
+  // ----------------------------
+
+  const resources = [
+    { title: "Budget Planning", category: "Finance", level: "Beginner" },
+    { title: "Investment Basics", category: "Finance", level: "Intermediate" },
+    { title: "Resume Writing", category: "Career", level: "Beginner" },
+    { title: "Interview Mastery", category: "Career", level: "Advanced" }
+  ];
+
+  const container = document.querySelector("#resourceContainer");
+
+  if (container) {
+
+    resources.forEach(resource => {
+      container.innerHTML += `
+        <div class="resource-card">
+          <h3>${resource.title}</h3>
+          <p>Category: ${resource.category}</p>
+          <p>Level: ${resource.level}</p>
+        </div>
+      `;
+    });
+
   }
 
 });

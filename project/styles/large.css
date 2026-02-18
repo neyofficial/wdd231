@@ -11,6 +11,21 @@
     padding: 1rem 3rem;
   }
 
+ header {
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.logo {
+    width: 40px;   /* Small size */
+    height: auto;
+}
+
   nav ul {
     display: flex;
     gap: 1.5rem;

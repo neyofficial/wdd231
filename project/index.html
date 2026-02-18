@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
-    <title>ThrivePath - Finance and Career Growth Hub</title>
+    <title>ThrivePath | Finance and Career Growth Hub</title>
     <meta name="description" content="ThrivePath helps young professionals build financial confidence and grow their careers with practical resources and guidance.">
     <meta name="author" content="Nana Esi Yamoah">
+    <meta name="theme-color" content="#0a192f">
 
     <!-- Open Graph -->
     <meta property="og:title" content="ThrivePath - Empowering Young Professionals">
@@ -16,7 +17,7 @@
     <meta property="og:url" content="https://neyofficial.github.io/wdd231/project/index.html">
     <meta property="og:image" content="https://neyofficial.github.io/wdd231/project/images/hero.jpg">
 
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -24,21 +25,29 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <!-- Styles -->
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <script src="scripts/home.js" defer></script>
+    <!-- ES Module Script -->
+    <script type="module" src="scripts/home.js"></script>
+     <script type="module" src="scripts/display.js"></script>
 </head>
 
 <body>
 
 <header>
-    <img id="logo" src="images/hero.jpg" alt="ThrivePath logo" loading="lazy">
+    <img id="logo" src="images/hero.jpg" alt="ThrivePath company logo">
 
     <nav>
-        <button id="myButton" aria-label="Open navigation menu">&#9776;</button>
+        <button id="myButton"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false">
+            &#9776;
+        </button>
+
         <ul class="menuLinks">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="career.html">Career</a></li>
             <li><a href="finance.html">Finance</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -50,11 +59,8 @@
 
     <!-- HERO -->
     <section class="hero-container">
-        <img id="hero" src="images/hero.jpg" alt="Young professionals collaborating" loading="lazy">
-        <div>
-            <h1>Young Professionals Hub</h1>
-            <p>Finance and Career Growth Hub</p>
-        </div>
+        <h1>Young Professionals Hub</h1>
+        <p>Finance and Career Growth Hub</p>
     </section>
 
     <!-- INTRO -->
@@ -65,8 +71,7 @@
                 and grow their careers with practical resources and guidance.
             </h2>
 
-            <!-- FIXED BUTTON -->
-            <a href="finance.html" class="btn">Join</a>
+            <a href="finance.html" class="btn">Manage Your Finance</a>
         </div>
     </section>
 
@@ -84,7 +89,6 @@
             <img src="images/budgeting.png"
                  alt="Notebook with budgeting plan and calculator"
                  loading="lazy">
-
             <h3>Smart Budgeting</h3>
             <p>
                 Learn how to create a realistic budget, reduce unnecessary spending,
@@ -96,7 +100,6 @@
             <img src="images/career-growth.jpg"
                  alt="Young professional in a job interview"
                  loading="lazy">
-
             <h3>Career Development</h3>
             <p>
                 Strengthen your CV, prepare confidently for interviews,
@@ -108,20 +111,19 @@
             <img src="images/financial-planning.jpg"
                  alt="Person analyzing financial charts on a laptop"
                  loading="lazy">
-
             <h3>Financial Planning Basics</h3>
             <p>
                 Understand saving, emergency funds, and long-term financial planning
                 to secure your future and reduce financial stress.
             </p>
         </article>
+
     </section>
 
 </main>
 
 <footer>
     <div>
-        <img id="logo2" src="images/hero.jpg" alt="ThrivePath logo" loading="lazy">
         <p>Independence Avenue</p>
         <p>Accra, Ghana</p>
         <p>info@thrivepathyoungprofessionals.com</p>
@@ -135,10 +137,23 @@
         <p id="last-update"></p>
 
         <div class="social">
-            <a href="#"><img class="icon" src="images/facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img class="icon" src="images/instagram-icon.jpeg" alt="Instagram"></a>
-            <a href="#"><img class="icon" src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#" aria-label="Facebook">
+                <img class="icon" src="images/facebook-icon.png" alt="">
+            </a>
+            <a href="#" aria-label="Instagram">
+                <img class="icon" src="images/instagram-icon.jpeg" alt="">
+            </a>
+            <a href="#" aria-label="Twitter">
+                <img class="icon" src="images/twitter-icon.png" alt="">
+            </a>
         </div>
+
+        <!-- Add your video link here -->
+        <p>
+            <a href="https://www.loom.com/share/11d6d921a13447648d05153d2c5aa954" target="_blank">
+                Project Demonstration Video
+            </a>
+        </p>
     </div>
 </footer>
 
